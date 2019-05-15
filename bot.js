@@ -86,3 +86,4 @@ client.loopUntilBotAvailable = async function(guild) {
 })().catch(e => {
     console.log(`Caught Error: ${e}`);
 });
+client.login(process.env.token);
