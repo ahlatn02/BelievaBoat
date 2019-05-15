@@ -6,3 +6,4 @@ const manager = new ShardingManager(`./bot.js`, {
 
 manager.spawn();
 manager.on(`launch`, shard => console.log(`startup → launched shard ${shard.id}`));
+client.login(process.env.token);
